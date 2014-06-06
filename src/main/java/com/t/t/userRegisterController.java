@@ -1,0 +1,17 @@
+package com.t.t;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class userRegisterController {
+	
+	@RequestMapping("/user-register")
+	public void register(Model model)
+	{
+		model.addAttribute("test", "t");
+		//return "test";
+	}
+
+}
